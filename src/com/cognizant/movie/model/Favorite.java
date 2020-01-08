@@ -6,7 +6,7 @@ import com.cognizant.movie.model.Movie;
 
 public class Favorite {
     private List<Movie> favoriteList;
-    private double total;
+    private Integer total;
 
     public Favorite() {
         // TODO Auto-generated constructor stub
@@ -15,7 +15,7 @@ public class Favorite {
     public Favorite(List<Movie> favoriteList, double total) {
         super();
         this.favoriteList = favoriteList;
-        this.total = total;
+        this.total = (int) total;
     }
 
     public List<Movie> getFavoriteList() {
@@ -26,12 +26,12 @@ public class Favorite {
         this.favoriteList = favoriteList;
     }
 
-    public double getTotal() {
+    public int getTotal() {
         return total;
     }
 
     public void setTotal(double total) {
-        this.total = total;
+        this.total = (int) total;
     }
 
     @Override
