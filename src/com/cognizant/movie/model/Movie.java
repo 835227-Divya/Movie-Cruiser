@@ -7,7 +7,7 @@ import java.util.Date;
 public class Movie {
     private long movieId;
     private String title;
-    private String boxOffice;
+    private long boxOffice;
     private boolean active;
     private Date dateOfLaunch;
     private String genre;
@@ -17,7 +17,7 @@ public class Movie {
         // TODO Auto-generated constructor stub
     }
 
-    public Movie(long movieId, String title, String boxOffice, boolean active, Date dateOfLaunch, String genre,
+    public Movie(long movieId, String title, long boxOffice, boolean active, Date dateOfLaunch, String genre,
             boolean hasTeaser) {
         super();
         this.movieId = movieId;
@@ -45,11 +45,11 @@ public class Movie {
         this.title = title;
     }
 
-    public String getBoxOffice() {
+    public long getBoxOffice() {
         return boxOffice;
     }
 
-    public void setBoxOffice(String boxOffice) {
+    public void setBoxOffice(long boxOffice) {
         this.boxOffice = boxOffice;
     }
 

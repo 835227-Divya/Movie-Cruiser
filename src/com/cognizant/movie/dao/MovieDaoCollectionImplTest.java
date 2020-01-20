@@ -40,7 +40,7 @@ public class MovieDaoCollectionImplTest {
         System.out.println("Edit Movie");
         System.out.printf("%-20s%-20s%-20s%-20s%-20s%-20s%-20s\n", "Id", "Title", "BoxOffice", "Active",
                 "Date of Launch", "Genre", "Has Teaser");
-        Movie movie = new Movie(1, "Final Destination", "$12,345,678", true, DateUtil.convertToDate("02/01/2020"),
+        Movie movie = new Movie(1, "Final Destination", 12345678L, true, DateUtil.convertToDate("02/01/2020"),
                 "Thriller", false);
         moviedao.modifyMovieList(movie);
         System.out.println(movie);
